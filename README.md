@@ -12,9 +12,9 @@ Below is a description of the folder structure and the purpose of each component
 
 - data/: Contains the raw data.
 
--graphs/: Contains all tghe graphs.
+- graphs/: Contains all the graphs.
 
--reports/: COntains the final presentation.
+- reports/: Contains the final presentation.
 
 - munge/: Contains the initial data processing script. This script exports and generate the clean dataset used in the analyses.
 
