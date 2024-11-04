@@ -95,6 +95,8 @@ monthly_data %>%
         x = "", 
         y = "Daily Spending")
 
+
+ggsave("graphs/principal/share.png", width = 20, height = 13, units = "cm")
 ## Is not a clear beahivor in this share plot
 
 
@@ -133,6 +135,9 @@ monthly_data %>%
         x = "", 
         y = "Daily Spending")
 
+
+ggsave("graphs/principal/scale_series.png", width = 20, height = 13, units = "cm")
+
 #############################################################3
 ##Now, we are going to compare the time taken to complete a purchase.
 #########################################################
@@ -165,6 +170,7 @@ monthly_data %>%
         x = "", 
         y = "Daily Spending")
 
+ggsave("graphs/principal/scale_series_days.png", width = 20, height = 13, units = "cm")
 
 # Scatter plots -----------------------------------------------------------------
 
@@ -227,6 +233,7 @@ p2 <- scatter_function("facebook", F)
 p3 <- scatter_function("display", F)
 
 p1 / p2 / p3
+ggsave("graphs/scatters/lead_spending.png", width = 20, height = 15, units = "cm")
 
 ## Log plots
 p1_log <- scatter_function("ggsearch", T)
@@ -237,6 +244,7 @@ p3_log <- scatter_function("display", T)
 
 p1_log / p2_log / p3_log
 
+ggsave("graphs/scatters/lead_spending_log.png", width = 20, height = 15, units = "cm")
 
 
 
@@ -275,6 +283,7 @@ p2 <- boxplot_function("facebook")
 p3 <- boxplot_function("display")
 
 p1 / p2 / p3
+ggsave("graphs/boxplot/distribution_spending.png", width = 20, height = 15, units = "cm")
 
 
 p1 <- boxplot_function("leads_n")
@@ -284,6 +293,7 @@ data %>% names()
 p2 <- boxplot_function("days_considered")
 p2
 p1/p2
+ggsave("graphs/boxplot/distribution_leads.png", width = 20, height = 15, units = "cm")
 
 
 # dates -------------------------------------------------------------------
@@ -342,8 +352,10 @@ p1 <- monthly_fcn("ggsearch", data_months_lead)
 p2 <- monthly_fcn("facebook", data_months_lead)
 
 p3 <- monthly_fcn("display", data_months_lead)
+
 p1+p2+p3
 
+ggsave("graphs/monthly/spending.png", width = 20, height = 15, units = "cm")
 
 
 
@@ -394,6 +406,7 @@ p3 <- daily_fcn("display", data_daily_lead)
 p1+p2+p3
 
 
+ggsave("graphs/daily/spending.png", width = 20, height = 15, units = "cm")
 
 
 data %>% 
