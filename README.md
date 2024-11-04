@@ -12,6 +12,10 @@ Below is a description of the folder structure and the purpose of each component
 
 - data/: Contains the raw data.
 
+-graphs/: Contains all tghe graphs.
+
+-reports/: COntains the final presentation.
+
 - munge/: Contains the initial data processing script. This script exports and generate the clean dataset used in the analyses.
 
 - src/: Contains the exploratory data analysis and models, divided into two subfolders:
@@ -31,4 +35,6 @@ Below is a description of the folder structure and the purpose of each component
 3. Explore the data using the EDA script in R (src/eda/).
   
 5. Use the **weekly model*** (src/model/02_WEEKLY_model.ipynb) for final results and insights based on the analysis.
+
+6. Check the final presentacion at (reports/Final_results.pptx)
 
